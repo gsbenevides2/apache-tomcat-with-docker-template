@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: Postgres
+    restart: "unless-stopped"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      app:
+        ipv4_address: 172.1.0.3
+  tomcat:
+    image: tomcat:latest
+    container_name: Tomcat
+    restart: "unless-stopped"
+    ports:
+      - 8080:8080
+    volumes:
+      - ./webappsTomcat:/usr/local/tomcat/webapps
+    networks:
+      app:
+        ipv4_address: 172.1.0.2
+networks:
+  app:
+    name: app
+    ipam:
+      config:
+        - subnet: "172.1.0.0/24"
+          gateway: "172.1.0.1"

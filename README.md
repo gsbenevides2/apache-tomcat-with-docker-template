@@ -23,7 +23,7 @@ Repositório template para a criação de um ambiente no Github Codespaces para 
 </ol>
 <h2>🐱🐘 Tomcat e Postgres</h2>
 <p align="justify">
-Os shells scripts <code>start_tomcat.sh</code> e <code>start_postgress.sh</code> são responsáveis por criar e executar containers com Tomcat e Postgres para o projeto.
+Os shells scripts <code>start.sh</code> são responsáveis por instalar e preparar containers e coisas ausentes. Após executalos é só rodar a task de verify.
 </p>
 <hr>
 <p align="center">Feito com 🤍 por <a href="https://gui.dev.br">gsbenevides2</a></p>

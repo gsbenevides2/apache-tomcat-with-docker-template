@@ -6,7 +6,7 @@
         <class>br.com.fatecmogidascruzes.noite.topicos.banco.negocio.conta.Transacao</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.18.3:5432/postgres"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://172.1.0.3:5432/postgres"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>
             <property name="javax.persistence.jdbc.password" value="postgres"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
